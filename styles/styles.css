@@ -1,0 +1,215 @@
+
+:root{
+    --color-title:#212121;
+    --color-text: #757575;
+    --color-accent: #2196F3;
+    --color-bg-first: #ffffff;
+    --color-bg-hero: #2F303A;
+    --color-bg-second: #F5F4FA;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--color-text);
+    font-size: 14px;
+}
+.link{
+    text-decoration: none;
+}
+.list{
+     list-style: none;
+}
+
+/* header */
+/* logo */
+.logo {
+    font-family: 'Raleway', sans-serif ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--color-accent);
+}
+.logo:hover, .logo:focus{
+    opacity: 0.7;
+}
+.header .logo-web{
+    color: #000;
+}
+/* Navigation */
+.nav-item{
+    font-weight: 500;
+        
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--color-title);
+}
+.nav-item:hover,
+.lnav-item:focus{
+    color: var(--color-accent);
+}
+.current.nav-item{
+    color: var(--color-accent);
+    font-style: normal;
+}
+/* contact header */
+.contact-mail, 
+.contact-phone{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    color: var(--color-text);
+}
+
+.contact-mail:hover,
+ .contact-mail:focus, 
+ .contact-phone:hover, 
+ .contact-phone:focus{
+    color: var(--color-accent);
+}
+
+/* Hero */
+.hero{
+    color: var(--color-bg-first);
+    background-color: var(--color-bg-hero);
+
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-transform: uppercase;
+}
+.hero-btn{
+    background-color: var(--color-accent);
+    color: inherit;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    letter-spacing: 0.06em;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+
+    border: none;
+
+}
+.hero-btn:hover, .hero-btn:focus{
+    background: #188CE8;
+}
+
+/* Advanteges */
+.advantages .list-title{
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    color: var(--color-title);
+}
+.advantages .list-text{
+    line-height: 1.71;
+}
+
+/* About */
+.section .section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    
+    color: var(--color-title);
+}
+
+/* Persons */
+.section.persons{
+    background-color: var(--color-bg-second);
+    line-height: 1.19;
+}
+.persons .list-item{
+    background-color: var(--color-bg-first);
+}
+
+
+.persons .list-title{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-title);
+    text-align: center;
+}
+.persons .list-text{
+    font-size: 16px;
+    text-align: center;
+}
+/* Footer */
+footer{
+    background-color: var(--color-bg-hero);    
+}
+.contact.footer{
+    font-style: normal;
+}
+.footer .logo-web {
+    color: var(--color-bg-first);
+}
+.contact-addres{
+    line-height: 1.71;
+    
+    color: var(--color-bg-first);
+    
+}
+
+
+/* Portfolio */
+/* button filter */
+.filter-btn .button {
+    color: var(--color-title);
+    background-color: var(--color-bg-second);
+
+    display: inline-block;
+    border-radius: 4px;   
+    padding: 6px 22px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+       
+    text-align: center;
+
+    border: none;
+}
+.filter-btn .button:hover, 
+.filter-btn .button:focus{
+    background-color: var(--color-accent);
+    color: var(--color-bg-first);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.current.button{
+    background-color: var(--color-accent);
+    color: var(--color-bg-first);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* article filter */
+.exampl-list .exempl-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    
+    color: var(--color-title);
+}
+.exampl-list .exempl-text{
+
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--color-text);
+}
