@@ -302,9 +302,7 @@ body {
 
     color: var(--color-text);
 }
-.exempl-item .link{
-    border: 1px solid #EEEEEE;
-}
+
 .section-portfolio{
     padding-top: 95px;
     padding-bottom: 95px;
@@ -324,5 +322,9 @@ body {
 }
 .exampl-item{
     margin-top: 30px;
-    border: 1px solid #EEEEEE;
+}
+.section-portfolio .description-img{
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
