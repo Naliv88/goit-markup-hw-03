@@ -28,9 +28,11 @@
           >
           <!-- navigation link -->
           <ul class="list nav">
-            <li><a class="link current nav-item" href="./index.html">Студия</a></li>
-            <li><a class="link nav-item" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="link nav-item" href="#">Контакты</a></li>
+            <li class="nav-list">
+              <a class="link current nav-item" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-list"><a class="link nav-item" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-list"><a class="link nav-item" href="#">Контакты</a></li>
           </ul>
           <!-- contact header -->
         </nav>
@@ -47,7 +49,7 @@
     <!-- main -->
     <main>
       <!-- Hero -->
-      <section class="section hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title uppertext">Эффективные решения<br />для вашего бизнеса</h1>
           <button type="button" id="orderServices" class="hero-btn">Заказать услугу</button>
@@ -91,13 +93,13 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list">
-            <li>
+            <li class="list-item">
               <img src="./image/box.jpg" alt="создание кода" width="370" height="294" />
             </li>
-            <li>
+            <li class="list-item">
               <img src="./image/box2.jpg" alt="создание приложения" width="370" height="294" />
             </li>
-            <li>
+            <li class="list-item">
               <img src="./image/box3.jpg" alt="дизайн" width="370" height="294" />
             </li>
           </ul>
@@ -115,13 +117,17 @@
                 width="270"
                 height="260"
               />
-              <h3 class="list-title">Игорь Демьяненко</h3>
-              <p class="list-text" lang="en">Product Designer</p>
+              <div class="person-descrip">
+                <h3 class="list-title">Игорь Демьяненко</h3>
+                <p class="list-text" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="list-item">
               <img src="./image/img1.jpg" alt="фотография Ольга Репина" width="270" height="260" />
-              <h3 class="list-title">Ольга Репина</h3>
-              <p class="list-text" lang="en">Frontend Developer</p>
+              <div class="person-descrip">
+                <h3 class="list-title">Ольга Репина</h3>
+                <p class="list-text" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="list-item">
               <img
@@ -130,8 +136,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="list-title">Николай Тарасов</h3>
-              <p class="list-text" lang="en">Marketing</p>
+              <div class="person-descrip">
+                <h3 class="list-title">Николай Тарасов</h3>
+                <p class="list-text" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="list-item">
               <img
@@ -140,35 +148,35 @@
                 width="270"
                 height="260"
               />
-              <h3 class="list-title">Михаил Ермаков</h3>
-              <p class="list-text" lang="en">UI Designer</p>
+              <div class="person-descrip">
+                <h3 class="list-title">Михаил Ермаков</h3>
+                <p class="list-text" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <!-- footer -->
-    <footer>
-      <div class="footer-section">
-        <div class="container">
-          <!-- logo footer -->
-          <a href="./" class="link logo footer">Web<span class="logo-web">Studio</span></a>
-          <!-- contacts footer -->
-          <address class="contact footer">
-            <ul class="list">
-              <li>
-                <span class="link contact-addres"> г. Киев, пр-т Леси Украинки, 26<br /></span>
-              </li>
-              <li>
-                <a class="link contact-mail" href="malito:info@devstudio.com">info@devstudio.com </a
-                ><br />
-              </li>
-              <li>
-                <a class="link contact-phone" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
+    <footer class="footer">
+      <div class="container">
+        <!-- logo footer -->
+        <a href="./" class="link logo footer">Web<span class="logo-web">Studio</span></a>
+        <!-- contacts footer -->
+        <address class="contact contact-footer">
+          <ul class="list">
+            <li class="list-item">
+              <span class="link contact-addres"> г. Киев, пр-т Леси Украинки, 26<br /></span>
+            </li>
+            <li class="list-item">
+              <a class="link contact-mail" href="malito:info@devstudio.com">info@devstudio.com </a
+              ><br />
+            </li>
+            <li class="list-item">
+              <a class="link contact-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>

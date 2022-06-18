@@ -15,10 +15,13 @@ body {
     font-size: 14px;
     
 }
-*, ::after, ::before {
+h1,h2,h3,h4,h5,h6,a,ul,p{
+    margin: 0;
+    padding: 0;}
+/* *, ::after, ::before {
     margin: 0;
     padding: 0;
-}
+} */
 .link{
     text-decoration: none;
 }
@@ -41,10 +44,10 @@ body {
 /* header */
 .header-container{
     border-bottom: 1px solid #ECECEC;
-    height: 80px;
-    padding-top: 24px;
+
 
 }
+
 
 .header-container .container{
     display: flex;
@@ -62,6 +65,10 @@ body {
     font-size: 26px;
     line-height: 1.19;
     color: var(--color-accent);
+    
+}
+.logo.header{
+    padding: 32px 0;
 }
 .logo:hover, .logo:focus{
     opacity: 0.7;
@@ -72,9 +79,12 @@ body {
 .nav{
     display: flex;
     align-items: center;
-    margin-left: 95px;
-    width: 295px;
+    margin-left: 93px;
+
     justify-content: space-between;
+}
+.nav-list:not(:last-child){
+    margin-right: 50px;
 }
 /* Navigation */
 .nav-item{
@@ -84,6 +94,9 @@ body {
     letter-spacing: 0.02em;
 
     color: var(--color-title);
+
+    display: block;
+    padding: 32px 0;
 }
 .current.nav-item,
 .nav-item:hover,
@@ -104,6 +117,12 @@ body {
     letter-spacing: 0.02em;
     
     color: var(--color-text);
+
+   
+}
+.contact.header .contact-mail,
+.contact.header .contact-phone{
+    padding: 32px 0;
 }
 .header .contact-phone{
     margin-left: 50px;
@@ -122,8 +141,8 @@ body {
 
     letter-spacing: 0.06em;
 
-    height: 600px;
-    padding-top: 200px;
+   
+    padding: 200px 0;
 }
 .hero-title{
     font-weight: 900;
@@ -156,15 +175,20 @@ body {
 }
 
 /* Advanteges */
-
+.advantages{
+    padding-bottom: 0;
+}
 .section.advantages .list{
     display: flex;
-    justify-content: space-between;
 
 }
 .advantages .list-item{
     width: 270px;
     text-align: left;
+    
+}
+.advantages .list-item:not(:last-child){
+    margin-right: 30px;
 }
 .advantages .list-title{
     font-weight: 700;
@@ -184,6 +208,9 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+}
+.about .list-item:not(:last-child){
+margin-right: 30px;
 }
 .section .section-title{
     font-weight: 700;
@@ -223,47 +250,65 @@ body {
 }
 .persons .list-text{
     font-size: 16px;
-
+    padding-top: 10px;
+}
+.persons .person-descrip{
+    padding: 30px 0;
 }
 /* Footer */
-.footer-section{
+.footer{
     background-color: var(--color-bg-hero);    
-    height: 250px;
+    padding: 60px 0;
 
 }
-.contact.footer .list{
+.contact-footer .list{
     font-style: normal;
     margin-top: 20px;
     letter-spacing: 0.03em;
-    margin-top: 9px;
+   
+}
+.contact-footer .list-item:not( :first-child){
+   padding-top: 9px;
+}
+.footer .logo{
+    padding: 0;
 }
 .footer .logo-web {
     color: var(--color-bg-first);
 }
-.footer .contact-mail,
-.footer .contact-phone {
+.contact-footer .contact-mail,
+.contact-footer .contact-phone {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-
-    
- 
     color: var(--color-text);
+ 
 }
 .contact-addres{   
     color: var(--color-bg-first);   
 }
 
-.footer-section{
-    padding-top: 60px;
-       
-}
-.footer-section .container{
+.footer .container{
     text-align: left;
+
 }
+
 
 
 /* Portfolio */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 /* button filter */
 .filter-btn .button {
     color: var(--color-title);
@@ -304,8 +349,8 @@ body {
 }
 
 .section-portfolio{
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding: 95px 0;
+
 }
 .filter-btn{
     width: 611px;
@@ -313,18 +358,28 @@ body {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 .section-portfolio .exampl-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 95px;
+    margin-top: -30px;
+    margin-right: -30px;
 }
 .exampl-item{
     margin-top: 30px;
+    margin-right: 30px;
 }
 .section-portfolio .description-img{
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
+    text-align: left;
+    padding: 20px 24px;
+}
+.exampl-item img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
